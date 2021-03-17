@@ -1,3 +1,8 @@
-node_modules/
 .cache/
+.DS_Store
+.gatsby-context.js
+.netlify
+node_modules/
+.npm
 public
+.vscode
