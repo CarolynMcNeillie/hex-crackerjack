@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const ColourContainer = styled.main`
-  background-color: ${(props) => props.color};
-  color: ${(props) => props.contrast};
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  font-family: "unica one";
+  font-size: 3em;
+  color: #000;
   transition: 0.3s background-color ease-in-out;
 `;
