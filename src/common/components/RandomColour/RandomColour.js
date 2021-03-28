@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { ColourContainer } from "./styled-components";
+import shuffle from "lodash/shuffle";
 import { checkContrast, getRandHex } from "../../utils/utils";
 import Swatch from "../Swatch/Swatch";
 
 export default function RandomColour() {
   const hex = getRandHex();
-  const colorArray = [hex, getRandHex(), getRandHex()];
+  const colorArray = shuffle([hex, getRandHex(), getRandHex()]);
+  console.log(colorArray);
 
   function handleClick(color) {
     console.log(color === hex);
